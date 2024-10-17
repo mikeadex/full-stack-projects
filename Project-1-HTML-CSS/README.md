@@ -1,4 +1,4 @@
-# Project Title: AI-Assisted Resume Builder
+# Project Title: AI-Assisted Resume Builder - [View Project](https://mikeadex.github.io/full-stack-projects/Project-1-HTML-CSS/index.html)
 
 <img src="md-images/md-5.jpg">
 
