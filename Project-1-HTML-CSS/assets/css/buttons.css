@@ -64,6 +64,11 @@ button:hover {
   background-color: var(--red);
 }
 
+.theme {
+  background-color: var(--lightblue);
+  color: var(--darkblack);
+}
+
 .success {
   background-color: var(--yellow);
   color: var(--lightgrey);
