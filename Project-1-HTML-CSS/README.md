@@ -47,6 +47,7 @@ he design focuses on simplicity and efficiency, ensuring that users can navigate
 >
 > - Minimalistic User Interface: Enhances focus and reduces user overwhelm.
 >   -Interactive Elements: Guides users through the resume creation process with interactive tips and examples.
+>   ![alt text](md2.jpg "UI/UX Figma file") > ![alt text](md3.jpg "UI/UX Figma file")
 
 ## Color Palette
 
