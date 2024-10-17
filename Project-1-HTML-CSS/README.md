@@ -38,9 +38,7 @@ Key competitors include traditional online CV builders like **Zety**, **LiveCare
 
 The prototype developed provides a functional demonstration of the AI-assisted Resume Builder. It showcases the seamless flow from LinkedIn profile import to template selection and final CV generation. The prototype has been essential in validating the user interface and the underlying AI technology's effectiveness.
 
-<p align="center>
 <img src="md-images/md1.jpg" width="500px">
-</p>
 
 ## UI/UX
 
@@ -51,12 +49,9 @@ he design focuses on simplicity and efficiency, ensuring that users can navigate
 > - Minimalistic User Interface: Enhances focus and reduces user overwhelm.
 >   -Interactive Elements: Guides users through the resume creation process with interactive tips and examples.
 
-<p align="center>
 <img src="md-images/md2.jpg" width="500px">
-</p>
-<p align="center>
 <img src="md-images/md3.jpg" width="500px">
-</p>
+
 ## Color Palette
 
 The chosen color palette uses a blend of blues and grays, invoking professionalism and trust. Blue is often associated with reliability and calm, suitable for professional tools. The accents of vibrant colors in the buttons and links are designed to maintain user engagement and highlight interactive elements.
