@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Get the best resume" />
+    <meta name="keywords" content="resume, job, career, job center" />
+    <meta name="author" content="Michael Adeleye" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/framework.css" />
+    <link rel="stylesheet" href="assets/css/nav.css" />
+    <link rel="stylesheet" href="assets/css/buttons.css" />
+    <link rel="stylesheet" href="assets/css/hero.css" />
+    <link rel="stylesheet" href="assets/css/mobile.css" />
+    <link rel="stylesheet" href="assets/css/forms.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <title>Resume Builder</title>
+  </head>
+  <body>
+    <!--Web and mobile navigation> I will improve it later using rem or em for a more responsive website-->
+    <header>
+      <div class="off-screen-menu">
+        <ul>
+          <li>Home</li>
+          <li>My Resume</li>
+          <li>Get Help</li>
+          <li>Sign In</li>
+          <li>Sign Up</li>
+        </ul>
+      </div>
+
+      <nav>
+        <span class="logo">
+          <img src="#" alt="" />
+        </span>
+        <span class="nav-link">
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="my-resume.html">My Resume</a></li>
+            <li><a href="get-help.html">Get Help</a></li>
+            <li>
+              <button class="btn btn-default">Sign In</button>
+            </li>
+            <li>
+              <button class="btn-default success">Sign Up</button>
+            </li>
+          </ul>
+        </span>
+      </nav>
+      <nav class="mobile">
+        <span class="logo-mobile"></span>
+        <div class="ham-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+    <!--Header ends-->
+
+    <section class="form-section top-padding-20 pd-bottom-20">
+      <div class="form-wrap">
+        <h2>Join Our Mailing List</h2>
+        <div class="line"></div>
+        <form action="" method="POST">
+          <div class="form-group">
+            <input type="text" id="name" class="name" placeholder="Name" />
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" class="email" placeholder="Email" />
+          </div>
+
+          <button class="btn btn-vlarge" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <script src="assets/js/scripts.js"></script>
+  </body>
+</html>
