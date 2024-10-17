@@ -1,5 +1,7 @@
 # Project Title: AI-Assisted Resume Builder
 
+<img src="md-images/md5.jpg">
+
 ## Problem Statement
 
 In today’s highly competitive job market, crafting a compelling and professional resume is crucial for job seekers. Many struggle to present their skills and experiences effectively, which can hinder their job search. Traditional resume building tools often provide limited assistance beyond basic templates, leaving users to manage the complex task of content creation and formatting on their own. Moreover, the integration of AI in resume building is still nascent, often lacking the capability to produce personalized and impactful content from sparse inputs like a LinkedIn profile.
