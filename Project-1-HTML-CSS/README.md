@@ -37,8 +37,7 @@ Key competitors include traditional online CV builders like **Zety**, **LiveCare
 ## Prototype
 
 The prototype developed provides a functional demonstration of the AI-assisted Resume Builder. It showcases the seamless flow from LinkedIn profile import to template selection and final CV generation. The prototype has been essential in validating the user interface and the underlying AI technology's effectiveness.
-
-![Tux, the Linux mascot](/md-images/md1.jpg)
+![alt text](md1.jpg "prototype")
 
 ## UI/UX
 
