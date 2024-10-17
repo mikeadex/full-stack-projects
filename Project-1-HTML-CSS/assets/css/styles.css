@@ -1,0 +1,69 @@
+@import url(root-color.css);
+@import url(fonts.css);
+body {
+  background-color: var(--mintWhite);
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--darkgrey);
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--newGrey);
+  font-size: var(--big);
+}
+
+h2 {
+  font-size: var(--h2);
+  font-align: center;
+}
+
+h3 {
+  font-size: var(--x-large);
+}
+
+h4 {
+  font-size: var(--large);
+}
+
+h5 {
+  font-size: var(--h5);
+}
+
+h6 {
+  font-size: 15px;
+}
+
+p {
+  font-size: var(--medium);
+}
+
+.form-section {
+  background-color: var(--dirtywhite);
+}
+
+.form-wrap {
+  text-align: center;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.line {
+  width: 50px;
+  height: 5px;
+  background-color: var(--darkblue);
+  margin: 5px auto;
+}
+
+.line2 {
+  width: 50px;
+  height: 2px;
+  background-color: var(--darkblue);
+  margin: 5px auto;
+}
+
+.subheading {
+  text-align: center;
+  text-transform: capitalize;
+}
