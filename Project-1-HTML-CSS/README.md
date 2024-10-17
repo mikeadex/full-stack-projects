@@ -1,6 +1,6 @@
 # Project Title: AI-Assisted Resume Builder
 
-<img src="md-images/md5.jpg">
+<img src="md-images/md5.jpg" width="1000px">
 
 ## Problem Statement
 
