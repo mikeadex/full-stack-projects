@@ -149,3 +149,23 @@ select:focus {
   background-color: var(--darkblue);
   color: var(--dirtywhite);
 }
+
+
+/* Full Width Form */
+.fullw-form {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+  
+}
+
+.fullw-form .item {
+  justify-self: center;
+  align-self: center;
+  width: 100%;
+}
+
