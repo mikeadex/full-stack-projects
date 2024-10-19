@@ -61,22 +61,243 @@
     </header>
     <!--Header ends-->
 
-    <section class="form-section top-padding-20 pd-bottom-20">
+    <section
+      class="form-section top-padding-20 pd-bottom-20"
+      id="Personal-information"
+    >
       <div class="form-wrap">
-        <h2>Join Our Mailing List</h2>
-        <div class="line"></div>
+        <h2 class="form-head">Personal Information</h2>
+        <div class="line-left"></div>
         <form action="" method="POST">
-          <div class="form-group">
-            <input type="text" id="name" class="name" placeholder="Name" />
+          <div class="form1">
+            <div class="form-group item-form">
+              <input
+                type="text"
+                id="first-name"
+                class="first-name"
+                placeholder="First Name"
+              />
+            </div>
+            <div class="form-group item-form">
+              <input
+                type="name"
+                id="last-name"
+                class="last-name"
+                placeholder="Last Name"
+              />
+            </div>
           </div>
-          <div class="form-group">
-            <input type="email" id="email" class="email" placeholder="Email" />
+
+          <div class="form1">
+            <div class="form-group item-form">
+              <input
+                type="text"
+                id="address"
+                class="address"
+                placeholder="Address"
+              />
+            </div>
+          </div>
+          <div class="form1">
+            <div class="form-group item-form">
+              <input type="text" id="city" class="city" placeholder="City" />
+            </div>
+            <div class="form-group item-form">
+              <input
+                type="name"
+                id="country"
+                class="country"
+                placeholder="Country"
+              />
+            </div>
+          </div>
+
+          <div class="form1">
+            <div class="form-group item-form">
+              <input type="number" id="phone" placeholder="Phone Number" />
+            </div>
+            <div class="form-group item-form">
+              <input
+                type="email"
+                id="email"
+                class="email"
+                placeholder="Email Address"
+              />
+            </div>
+          </div>
+
+          <div class="form-group item-form">
+            <textarea placeholder="Your message" required></textarea>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <div class="space"></div>
+    <!---=========
+   Education Section Start
+   ==================================-->
+    <section class="form-section top-padding-20 pd-bottom-20" id="education">
+      <div class="form-wrap">
+        <h2 class="form-head">Education</h2>
+        <div class="line-left"></div>
+        <form action="" method="POST">
+          <div class="form1">
+            <div class="form-group item-form">
+              <input
+                type="text"
+                id="school"
+                class="schol"
+                placeholder="Name of School"
+              />
+            </div>
+          </div>
+
+          <div class="form1">
+            <div class="form-group item-form">
+              <input
+                type="text"
+                id="school"
+                class="schol"
+                placeholder="Course"
+              />
+            </div>
+          </div>
+          <div class="form-group item-form">
+            <select
+              name="qualification"
+              id="qualification"
+              aria-placeholder="hey"
+            >
+              <option value="" disabled selected>Select Qualification</option>
+              <option value="bachelor-degree">Bachelor's Degree</option>
+              <option value="master-degree">Master's Degree</option>
+              <option value="phd">PhD</option>
+            </select>
+          </div>
+
+          <div class="form1">
+            <div class="form-group item-form">
+              <input
+                type="number"
+                id="start-date"
+                class="start-date"
+                placeholder="Start Date"
+              />
+            </div>
+            <div class="form-group item-form">
+              <input
+                type="number"
+                id="completed-date"
+                class="completed-date"
+                placeholder="Completed Date"
+              />
+            </div>
+          </div>
+
+          <div class="form-group item-form">
+            <label class="label" for="certificate-in-view"
+              >Cetification in view:</label
+            >
+            <label class="switch">
+              <input type="checkbox" id="certificate-in-view" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!---=========
+   Education Section Ends
+   ==================================-->
+    <div class="space"></div>
+    <!---=========
+   Work Experience Section Start
+   ==================================-->
+    <section class="form-section top-padding-20 pd-bottom-20" id="experince">
+      <div class="form-wrap">
+        <h2 class="form-head">Experience</h2>
+        <div class="line-left"></div>
+        <form action="" method="POST">
+          <div class="form1">
+            <div class="form-group item-form">
+              <input
+                type="text"
+                id="employer"
+                class="schol"
+                placeholder="Your Employer"
+              />
+            </div>
+          </div>
+
+          <div class="form1">
+            <div class="form-group item-form">
+              <input
+                type="text"
+                id="school"
+                class="schol"
+                placeholder="Course"
+              />
+            </div>
+          </div>
+          <div class="form-group item-form">
+            <select name="employment-type" id="employment-type">
+              <option value="" disabled selected>Employment Time</option>
+              <option value="bachelor-degree">Full Time</option>
+              <option value="master-degree">Part Time</option>
+              <option value="master-degree">Volunteering</option>
+              <option value="master-degree">Internship</option>
+              <option value="phd">PhD</option>
+            </select>
+          </div>
+
+          <div class="form1">
+            <div class="form-group item-form">
+              <input
+                type="number"
+                id="start-date"
+                class="start-date"
+                placeholder="Start Date"
+              />
+            </div>
+            <div class="form-group item-form">
+              <input
+                type="number"
+                id="completed-date"
+                class="completed-date"
+                placeholder="Completed Date"
+              />
+            </div>
+          </div>
+
+          <div class="activities">
+            <div class="form-group item-form">
+              <textarea placeholder="Key Responsibilities" required></textarea>
+            </div>
+            <div class="form-group item-form">
+              <textarea placeholder="Key Achievements:" required></textarea>
+            </div>
+          </div>
+
+          <div class="form-group item-form">
+            <label class="label" for="curren-employment"
+              >Current Employment:</label
+            >
+            <label class="switch">
+              <input type="checkbox" id="curren-employment" />
+              <span class="slider round"></span>
+            </label>
           </div>
 
           <button class="btn btn-vlarge" type="submit">Subscribe</button>
         </form>
       </div>
     </section>
+
+    <!---=========
+   Education Section Ends
+   ==================================-->
 
     <script src="assets/js/scripts.js"></script>
   </body>

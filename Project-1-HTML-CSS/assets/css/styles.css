@@ -1,15 +1,25 @@
 @import url(root-color.css);
 @import url(fonts.css);
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
 body {
   background-color: var(--mintWhite);
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: roboto, poppins, sans-serif;
   color: var(--darkgrey);
   max-width: 940px;
   margin: 0 auto;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bebas Neue';
+}
+
 h1 {
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
   color: var(--newGrey);
   font-size: var(--big);
 }
@@ -43,7 +53,8 @@ p {
 }
 
 .form-section {
-  background-color: var(--dirtywhite);
+  /* background-color: var(--dirtywhite); */
+  border-radius: 1.5rem;
 }
 
 .form-wrap {
@@ -52,21 +63,64 @@ p {
   margin: 0 auto;
 }
 
+.form-head {
+  text-align: left;
+}
+
 .line {
-  width: 50px;
-  height: 5px;
+  width: 3rem;
+  height: 0.3rem;
   background-color: var(--darkblue);
-  margin: 5px auto;
+  margin: 0.3rem auto;
+}
+
+.line-left {
+  width: 3rem;
+  height: 0.3rem;
+  background-color: var(--darkblue);
+  margin: -1.2rem 0px 1.3rem 0;
+  /* margin: 5px auto; */
 }
 
 .line2 {
-  width: 50px;
+  width: 3rem;
   height: 2px;
   background-color: var(--darkblue);
-  margin: 5px auto;
+  margin: 0.3rem auto;
 }
 
 .subheading {
   text-align: center;
   text-transform: capitalize;
+}
+
+
+/* Form Wrapper - Clean up later */
+.form1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+  flex-wrap: wrap;
+  
+}
+
+.item-form {
+  margin: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.label {
+  display: block;
+  align-self: flex-start;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+.space {
+  margin-bottom: 1.6rem;
+  
 }
