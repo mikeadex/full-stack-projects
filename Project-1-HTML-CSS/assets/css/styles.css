@@ -1,9 +1,7 @@
 @import url(root-color.css);
 @import url(fonts.css);
 
-
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 body {
   background-color: var(--mintWhite);
@@ -14,18 +12,24 @@ body {
   margin: 0 auto;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Bebas Neue';
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "POPPINS", sans-serif;
 }
 
 h1 {
   /* font-family: Arial, Helvetica, sans-serif; */
   color: var(--newGrey);
   font-size: var(--big);
+  font-family: "Bebas Neue", cursive;
 }
 
 h1 span {
-  color: #BDE0FE;
+  color: #bde0fe;
 }
 
 h2 {
@@ -50,6 +54,11 @@ h6 {
 
 p {
   font-size: var(--medium);
+}
+
+a {
+  text-decoration: none;
+  color: var(--darkblue);
 }
 
 .form-section {
@@ -94,7 +103,6 @@ p {
   text-transform: capitalize;
 }
 
-
 /* Form Wrapper - Clean up later */
 .form1 {
   display: flex;
@@ -102,7 +110,6 @@ p {
   align-items: center;
   gap: 0.3rem;
   flex-wrap: wrap;
-  
 }
 
 .item-form {
@@ -122,5 +129,4 @@ p {
 
 .space {
   margin-bottom: 1.6rem;
-  
 }

@@ -1,98 +1,87 @@
 @import url(root-color.css);
+@import url(fonts.css);
 
 @media (min-width: 768px) {
   .container-new {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      /* margin-top: 2.5rem; */
-      gap: 1rem;
-      flex-wrap: wrap;
-      padding: 3em 0;
-    }
-  
-    .wrap-bg {
-      background-color: #212529;
-      margin: 10px;
-      padding: 30px;
-      border-radius: 1.5rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
-      /* align-content: flex-start; */
-    }
-  
-    .item {
-      margin: 0 1.25rem;
-      justify-content: center;
-      align-items: center;
-      flex-direction: row;
-      flex-grow: 1;
-      text-align: center;
-    }
-  
-    .item2 {
-      position: relative;
-      right: 170px;
-      top: 50px;
-      z-index: 2;
-      
-  
-      /*order: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 2.5rem; */
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 3em 0;
+  }
+
+  .wrap-bg {
+    background-color: #212529;
+    margin: 10px;
+    padding: 30px;
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+    /* align-content: flex-start; */
+  }
+
+  .item {
+    margin: 0 1.25rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  .item2 {
+    position: relative;
+    right: 170px;
+    top: 50px;
+    z-index: 2;
+  }
+
+  .item3 {
+    position: relative;
+    left: 280px;
+    top: -450px;
+    z-index: 3;
+    margin-bottom: -350px;
+    /*order: 0;
      position: relative;
       top: 300px; */
-    }
-  
-    .item3 {
-      position: relative;
-      left: 280px;
-      top: -450px;
-      z-index: 3;
-      margin-bottom: -350px;
-      /*order: 0;
-     position: relative;
-      top: 300px; */
-    }
-  
-  
-    .item1 {
-      max-width: 31.25rem;
-      text-align: justify;
-      margin: 2rem;
-      color: white;
-      text-transform: uppercase;
-      /*order: 1;
+  }
+
+  .item1 {
+    max-width: 31.25rem;
+    text-align: justify;
+    margin: 2rem;
+    color: white;
+    text-transform: uppercase;
+    /*order: 1;
      position: absolute;
       z-index: 2; */
-    }
-  
-  
-  
-  
-    img {
-      max-width: 100%;
-      height: 100%;
-      border-radius: 30px;
-      object-fit: cover;
-      box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
-      border-radius: 50px 0 150px 0;
-      
-    }
-  
-  
-    img-small {
-      max-width: 30px;
-      height: 100%;
-      object-fit: cover;
-    }
+  }
 
-    .mobile {
-      display: none;
-    }
+  img {
+    max-width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    object-fit: cover;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 50px 0 150px 0;
+  }
+
+  img-small {
+    max-width: 30px;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .mobile {
+    display: none;
+  }
 }
-
 
 /* Hero Mobile  */
 
@@ -132,15 +121,15 @@
     text-align: center;
   }
 
-    .item1 {
-      max-width: 31.25rem;
-      text-align: justify;
-      margin: 0.5rem;
-      color: white;
-      text-transform: uppercase;
-      z-index: 3;
-      order: 1;
-    }
+  .item1 {
+    max-width: 31.25rem;
+    text-align: justify;
+    margin: 0.5rem;
+    color: white;
+    text-transform: uppercase;
+    z-index: 3;
+    order: 1;
+  }
 
   .item2 {
     position: relative;
@@ -160,24 +149,23 @@
       top: 300px; */
   }
 
-    .img-hero {
-      max-width: 100%;
-      height: 100%;
-      border-radius: 120px 120px 0 0;
-      object-fit: cover;
-      box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
-    }
+  .img-hero {
+    max-width: 100%;
+    height: 100%;
+    border-radius: 120px 120px 0 0;
+    object-fit: cover;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+  }
 
-    img {
-      border-radius: 50px 0 250px 0 ;
-    }
-  
-  
-    img-small {
-      max-width: 30px;
-      height: 100%;
-      object-fit: cover;
-    }
+  img {
+    border-radius: 50px 0 250px 0;
+  }
+
+  img-small {
+    max-width: 30px;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 /* Container to be transferred later */
@@ -244,11 +232,24 @@
 
 .apia-item {
   line-height: auto;
-  
-
 }
 
 .apia-img {
   width: 40%;
   height: auto;
+}
+
+.apia span {
+  font-weight: var(--strong);
+}
+
+.span-style {
+  display: block;
+}
+
+.text-center {
+  text-align: center;
+}
+
+#desktop {
 }

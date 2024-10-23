@@ -17,7 +17,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
-    <title>Support</title>
+    <title>Resume Builder</title>
   </head>
   <body>
     <!--Web and mobile navigation> I will improve it later using rem or em for a more responsive website-->
@@ -27,7 +27,7 @@
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="get-started.html">My Resume</a></li>
           <li><a href="support.html">Support</a></li>
-          <li><a href="sign-in.html">Sign In</a></li>
+          <li><a href="sign.html">Sign In</a></li>
           <li><a href="register.html">Sign Up</a></li>
         </ul>
       </div>
@@ -67,13 +67,49 @@
     <section class="form-section top-padding-20 pd-bottom-20">
       <div class="fullw-form">
         <div class="item">
-          <h1>Mi naa joke, dis a serious work. Yuh fi come back later!</h1>
+          <h1>Welcome on Board</h1>
+          <p>Select option that best suite your request</p>
+          <form id="locationForm" action="" method="POST">
+            <div class="form-group item-form">
+              <select
+                id="select-location"
+                name="select-location"
+                class="select_location"
+                aria-placeholder="hey"
+              >
+                <option value="" disabled selected>
+                  Click me to get started
+                </option>
+                <option value="resume.html">Write me a CV</option>
+                <option value="upload-cv.html">Upload and Rewrite my CV</option>
+                <option value="linkedin-cv.html">
+                  Use my LinkedIn profile to Write ny CV
+                </option>
+              </select>
+            </div>
+            <div class="form-group">
+              <button class="btn btn-vlarge theme">Get Started</button>
+            </div>
+          </form>
         </div>
-        <div class="line"></div>
       </div>
     </section>
 
     <div class="space"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $("#locationForm").on("submit", function (event) {
+        event.preventDefault();
+
+        var selectedValue = $("#select-location").val();
+
+        if (selectedValue) {
+          window.location.href = selectedValue;
+        } else {
+          alert("Please select a location");
+        }
+      });
+    </script>
 
     <script src="assets/js/scripts.js"></script>
   </body>

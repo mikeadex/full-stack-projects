@@ -29,7 +29,7 @@
     font-weight: var(--medium);
   }
 
-  a:hover {
+  nav a:hover {
     background-color: var(--dirtywhite);
 
     padding: var(--pd-1);
@@ -95,12 +95,11 @@
 
   .off-screen-menu ul li {
     list-style-type: none;
-    
   }
 
   .off-screen-menu a {
     text-decoration: none;
-    color: var(--mintwhite);  
+    color: var(--mintwhite);
   }
 
   .off-screen-menu.active {
