@@ -1,6 +1,6 @@
 # My Fullstack Development Journey
 
-<img src="md-images/fullstack.jpg">
+<img src="/Project-1-HTML-CSS/md-images/fullstack.jpg">
 
 ## Journey Overview
 
@@ -20,6 +20,8 @@ Here’s a breakdown of the technologies I am learning and how each plays a role
     •	Databases: My learning will cover both SQL and NoSQL databases, giving me the ability to manage data, store information securely, and ensure scalability.
 
 ## First Project: Frontend Framework of My CV Builder Solution
+
+<img src="/Project-1-HTML-CSS/md-images/md-5.jpg" width="500px">
 
 [View Project](https://mikeadex.github.io/full-stack-projects/Project-1-HTML-CSS/index.html)
 
