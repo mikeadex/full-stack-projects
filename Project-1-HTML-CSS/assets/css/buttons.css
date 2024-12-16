@@ -85,3 +85,7 @@ button:hover {
   gap: 15px;
 
 }
+
+#remove-education {
+  text-align: right;
+}
