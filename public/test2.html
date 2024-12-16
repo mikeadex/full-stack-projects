@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Getting Form Values</title>
+  </head>
+  <style>
+    .name,
+    .email {
+      margin: 1rem;
+    }
+    input {
+      margin-left: 1rem;
+    }
+  </style>
+  <body>
+    <h3>Sign up to our newsletter for all the latest updates!</h3>
+    <form id="newsletter-signup" method="POST" action="/thankyou/">
+      <div class="name">
+        <label for="name">Name:</label>
+        <input id="name" type="text" name="name" required />
+      </div>
+      <div class="email">
+        <label for="email">Email:</label>
+        <input id="email" type="email" name="email" required />
+      </div>
+      <input type="submit" id="submit" />
+    </form>
+    <p id="name-result"></p>
+    <p id="email-result"></p>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/acorn/7.3.1/acorn.js"
+      integrity="sha512-4GRq4mhgV43mQBgKMBRG9GbneAGisNSqz6DSgiBYsYRTjq2ggGt29Dk5thHHJu38Er7wByX/EZoG+0OcxI5upg=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/acorn-walk/7.2.0/walk.js"
+      integrity="sha512-j5XDYQOKluxz1i4c7YMMXvjLLw38YFu12kKGYlr2+w/XZLV5Vg2R/VUbhN//K/V6LPKuoOA4pfcPXB5NgV7Gwg=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/test2.js"></script>
+  </body>
+</html>

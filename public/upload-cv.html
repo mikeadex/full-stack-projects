@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Resume Builder</title>
+  </head>
+  <body>
+    <section class="form-section top-padding-20 pd-bottom-20">
+      <div class="fullw-form">
+        <div class="item">
+          <h1>Get Your CV</h1>
+          <p>Share your LinkedIn profile to generate a CV</p>
+          <form enctype="multipart/form-data" id="cv-form">
+            <div class="form-group">
+              <input
+                type="file"
+                name="upload-cv"
+                id="upload-cv"
+                placeholder="Upload your current CV"
+              />
+            </div>
+            <div class="form-group">
+              <button class="btn btn-default" id="generate-cv" type="submit">
+                Get Started
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <div id="prompt-response"></div>
+
+    <div class="space"></div>
+
+    <!-- Output container for extracted text -->
+    <div
+      id="docx-text-output"
+      style="white-space: pre-wrap; padding: 20px; border: 1px solid #ccc"
+    ></div>
+
+    <script src="./js/mammoth.browser.js"></script>
+    <script src="./assets/js/bundle.js"></script>
+  </body>
+</html>

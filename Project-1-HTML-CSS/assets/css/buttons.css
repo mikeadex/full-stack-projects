@@ -3,6 +3,7 @@ button:hover {
   background-color: var(--mintwhite);
   color: var(--darkblack);
   cursor: pointer;
+  
 }
 
 .btn {
@@ -73,4 +74,14 @@ button:hover {
   background-color: var(--yellow);
   color: var(--lightgrey);
   font-weight: bold;
+}
+
+/* Navigation Form */
+.form-mgt {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+
 }

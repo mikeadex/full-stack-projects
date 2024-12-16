@@ -1,5 +1,9 @@
 /* Testing the root path */
 @import url(root-color.css);
+
+.form-main {
+  margin: 0 auto;
+}
 .form-group {
   margin: 0.6rem;
 }
@@ -168,4 +172,73 @@ select:focus {
   align-self: center;
   width: 100%;
 }
+
+.progress-content {
+  max-width: 550px;
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem auto;
+  position: relative;
+}
+.progress-content::before {
+  content: '';
+  background-color: var(--dirtywhite);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 100%;
+  z-index: 100;
+}
+
+.progress {
+  background-color: var(--darkblue);
+  position: absolute;
+  top: 50%;
+  left: 0;transform: translateY(-50%);
+  height: 4px;
+  width: 0;
+  z-index: 100;
+  transform: 0.4s ease-in;
+}
+
+.circle-step {
+  background-color: var(--yellow);
+  height: 45px;
+  width: 45px;
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+  border-radius: 50%;
+  z-index: 100;
+  transition: 0.4s ease-in;
+}  
+
+.circle-step.active {
+  border-color: var(--yellow);
+  color: var(--mintwhite);
+  background-color: var(--darkblue);
+}
+
+.rform {
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0.5s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.rform.active {
+  opacity: 1;
+  visibility: visible;
+  position: relative;
+}
+
+/* #education, #experience, #job-interest {
+  display: none;
+} */
+
 

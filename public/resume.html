@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Get the best resume" />
+    <meta name="keywords" content="resume, job, career, job center" />
+    <meta name="author" content="Michael Adeleye" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/framework.css" />
+
+    <link rel="stylesheet" href="assets/css/nav.css" />
+    <link rel="stylesheet" href="assets/css/buttons.css" />
+    <!-- <link rel="stylesheet" href="assets/css/hero.css" /> -->
+    <link rel="stylesheet" href="assets/css/mobile.css" />
+    <link rel="stylesheet" href="assets/css/forms.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <title>Resume Builder Form</title>
+  </head>
+  <body>
+    <div class="full-container">
+      <!--Web and mobile navigation> I will improve it later using rem or em for a more responsive website-->
+      <header>
+        <div class="off-screen-menu">
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="get-started.html">My Resume</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="sign-in.html">Sign In</a></li>
+            <li><a href="register.html">Sign Up</a></li>
+          </ul>
+        </div>
+
+        <nav>
+          <span class="logo">
+            <img src="#" alt="Logo" />
+          </span>
+          <span class="nav-link">
+            <ul>
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="get-started.html">My Resume</a></li>
+              <li><a href="support.html">Support</a></li>
+              <li class="pd-bottom-40"></li>
+              <li>
+                <a class="btn btn-default" href="sign-in.html">Sign In</a>
+              </li>
+              <li>
+                <a class="btn btn-default success" href="register.html"
+                  >Register</a
+                >
+              </li>
+            </ul>
+          </span>
+        </nav>
+        <nav class="mobile">
+          <span class="logo-mobile"></span>
+          <div class="ham-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </header>
+      <div class="form-main">
+        <section class="form-section top-padding-20">
+          <div class="form-wrap">
+            <div class="progress-content">
+              <div class="progress" id="progress"></div>
+              <div class="circle-step active">1</div>
+              <div class="circle-step">2</div>
+              <div class="circle-step">3</div>
+              <div class="circle-step">4</div>
+              <div class="circle-step">5</div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="form-section pd-bottom-20 rform active"
+          id="personal-information"
+        >
+          <!-- Global display of errors -->
+          <div class="form-wrap" id="pi">
+            <h2 class="form-head">
+              <i class="fa-solid fa-user"></i> Personal Info
+            </h2>
+            <div class="line-left"></div>
+            <form id="form1">
+              <div class="form1">
+                <div class="form-group item-form">
+                  <input
+                    type="text"
+                    id="first-name"
+                    class="first-name"
+                    placeholder="First Name*  (required)"
+                    required
+                    aria-describedby="errorFn"
+                  />
+                  <p id="errorFn" class="error"></p>
+                </div>
+                <div class="form-group item-form">
+                  <input
+                    type="text"
+                    id="last-name"
+                    class="last-name"
+                    placeholder="Last Name"
+                    required
+                    aria-describedby="errorLn"
+                  />
+                  <p id="errorLn" class="error"></p>
+                </div>
+              </div>
+
+              <div class="form1">
+                <div class="form-group item-form">
+                  <input
+                    type="text"
+                    id="address"
+                    class="address"
+                    placeholder="Address"
+                    required
+                    aria-describedby="errorAd"
+                  />
+                  <p id="errorAd" class="error"></p>
+                </div>
+              </div>
+              <div class="form1">
+                <div class="form-group item-form">
+                  <input
+                    type="text"
+                    id="city"
+                    class="city"
+                    placeholder="City"
+                    required
+                    aria-describedby="errorCity"
+                  />
+                  <p id="errorCity" class="error"></p>
+                </div>
+                <div class="form-group item-form">
+                  <input
+                    type="text"
+                    id="country"
+                    class="country"
+                    placeholder="Country"
+                    required
+                    aria-describedby="errorCountry"
+                  />
+                  <p id="errorCountry" class="error"></p>
+                </div>
+              </div>
+
+              <div class="form1">
+                <div class="form-group item-form">
+                  <input
+                    type="number"
+                    id="phone"
+                    placeholder="Phone Number"
+                    required
+                    aria-describedby="errorPhone"
+                  />
+                  <p id="errorPhone" class="error"></p>
+                </div>
+                <div class="form-group item-form">
+                  <input
+                    type="email"
+                    id="email"
+                    class="email"
+                    placeholder="Email Address"
+                    required
+                    aria-describedby="errorEmail"
+                  />
+                  <p id="errorEmail" class="error"></p>
+                </div>
+              </div>
+
+              <div class="form-mgt">
+                <button
+                  id="cancel"
+                  class="btn btn-vlarge success"
+                  type="button"
+                >
+                  Cancel
+                </button>
+                <button id="next1" class="btn btn-vlarge" type="submit">
+                  Next
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+
+        <!-- <div class="space"></div> -->
+        <!---=========
+   Education Section Start
+   ==================================-->
+        <section
+          class="form-section top-padding-20 pd-bottom-20 rform"
+          id="education"
+        >
+          <div class="form-wrap">
+            <!-- Global display of error 2 -->
+            <div id="error2" class="error"></div>
+            <h2 class="form-head">
+              <i class="fa-solid fa-graduation-cap"></i> Education
+            </h2>
+            <div class="line-left"></div>
+            <form id="form-education-wrap">
+              <div id="education-container">
+                <div class="edu-fieldset" data-index="1">
+                  <div class="form1">
+                    <div class="form-group item-form">
+                      <input
+                        type="text"
+                        id="school-name-1"
+                        name="school-name[]"
+                        class="schol"
+                        placeholder="Name of School"
+                        required
+                        aria-describedby="error-sch-1"
+                      />
+                      <p id="error-sch-1" class="error" aria-live="polite"></p>
+                    </div>
+                  </div>
+
+                  <div class="form1">
+                    <div class="form-group item-form">
+                      <input
+                        type="text"
+                        id="course-name-1"
+                        name="course-name[]"
+                        class="schol"
+                        placeholder="Course"
+                        required
+                        aria-describedby="error-course-1"
+                      />
+                      <p
+                        id="error-course-1"
+                        class="error"
+                        aria-live="polite"
+                      ></p>
+                    </div>
+                  </div>
+                  <div class="form-group item-form">
+                    <select
+                      name="qualification[]"
+                      id="your-qualification-1"
+                      aria-describedby="error-qual-1"
+                    >
+                      <option value="" disabled selected>
+                        Select Qualification
+                      </option>
+                      <option value="bachelor-degree">Bachelor's Degree</option>
+                      <option value="master-degree">Master's Degree</option>
+                      <option value="phd">PhD</option>
+                    </select>
+                    <p id="error-qual-1" class="error" aria-live="polite"></p>
+                  </div>
+
+                  <div class="form1">
+                    <div class="form-group item-form">
+                      <input
+                        type="date"
+                        id="start-date-1"
+                        name="start-date[]"
+                        class="start-date"
+                        placeholder="Start Date"
+                        required
+                        aria-describedby="error-start-1"
+                      />
+                      <p
+                        id="error-start-1"
+                        class="error"
+                        aria-live="polite"
+                      ></p>
+                    </div>
+                    <div class="form-group item-form">
+                      <input
+                        type="date"
+                        id="completion-date-1"
+                        name="completion-date[]"
+                        class="completion-date"
+                        placeholder="Completion Date"
+                        required
+                        aria-describedby="error-end-1"
+                      />
+                      <p id="error-end-1" class="error" aria-live="polite"></p>
+                    </div>
+                  </div>
+
+                  <div class="form-group item-form">
+                    <label class="label" for="certificate-inview-1">
+                      Certification in view:
+                    </label>
+                    <label class="switch">
+                      <input
+                        type="checkbox"
+                        id="certificate-inview-1"
+                        name="certificate-inview[]"
+                        required
+                      />
+                      <span class="slider round"></span>
+                    </label>
+                    <p id="error-cert-1" class="error" aria-live="polite"></p>
+                  </div>
+                  <button
+                    type="button"
+                    class="remove-education btn btn-small danger"
+                  >
+                    Remove
+                  </button>
+                  <!-- Add Education Button -->
+                </div>
+              </div>
+              <button
+                type="button"
+                id="add-education"
+                class="btn btn-small success"
+              >
+                <i class="fa-solid fa-plus"></i> Add Education
+              </button>
+              <div class="form-mgt">
+                <button id="prev1" class="btn btn-vlarge success" type="button">
+                  Prev
+                </button>
+                <button id="next2" class="btn btn-vlarge" type="submit">
+                  Next
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+
+        <!---=========
+   Education Section Ends
+   ==================================-->
+        <!-- <div class="space"></div> -->
+        <!---=========
+   Work Experience Section Start
+   ==================================-->
+        <section
+          class="form-section top-padding-20 pd-bottom-20 rform"
+          id="experience"
+        >
+          <div class="form-wrap">
+            <!-- Global display of error 3 -->
+            <div id="error3" class="error"></div>
+            <h2 class="form-head">
+              <i class="fa-solid fa-briefcase"></i> Experience
+            </h2>
+            <div class="line-left"></div>
+            <form id="form-employment-wrap">
+              <div id="experience-container">
+                <div class="experience-fieldset" data-index="1">
+                  <div class="form1">
+                    <div class="form-group item-form">
+                      <input
+                        type="text"
+                        id="employer-name-1"
+                        name="employer-name[]"
+                        class="schol"
+                        placeholder="Employer Name"
+                        required
+                        aria-describedby="error-emp-1"
+                      />
+                      <p id="error-emp-1" class="error" aria-live="polite"></p>
+                    </div>
+                  </div>
+
+                  <div class="form1">
+                    <div class="form-group item-form">
+                      <input
+                        type="text"
+                        id="job-role-1"
+                        name="job-role[]"
+                        class="schol"
+                        placeholder="Job Title"
+                        required
+                        aria-describedby="error-title-1"
+                      />
+                      <p
+                        id="error-title-1"
+                        class="error"
+                        aria-live="polite"
+                      ></p>
+                    </div>
+                  </div>
+                  <div class="form-group item-form">
+                    <select
+                      id="employment-type-1"
+                      name="employment[]"
+                      aria-describedby="error-type-1"
+                    >
+                      <option value="" disabled selected>
+                        Employment Type
+                      </option>
+                      <option value="full-time">Full Time</option>
+                      <option value="part-time">Part Time</option>
+                      <option value="volunteering">Volunteering</option>
+                      <option value="internship">Internship</option>
+                      <option value="contract">Contract</option>
+                    </select>
+                    <p id="error-type-1" class="error" aria-live="polite"></p>
+                  </div>
+
+                  <div class="form1">
+                    <div class="form-group item-form">
+                      <input
+                        type="date"
+                        id="start-date-1"
+                        name="start-date[]"
+                        class="start-date"
+                        placeholder="Start Date"
+                        required
+                        aria-describedby="error-job-start-1"
+                      />
+                      <p
+                        id="error-job-start-1"
+                        class="error"
+                        aria-live="polite"
+                      ></p>
+                    </div>
+
+                    <div class="form-group item-form">
+                      <input
+                        type="date"
+                        id="end-date-1"
+                        name="end-date[]"
+                        class="completed-date"
+                        placeholder="Completed Date"
+                        required
+                        aria-describedby="error-job-end-1"
+                      />
+                      <p
+                        id="error-job-end-1"
+                        class="error"
+                        aria-live="polite"
+                      ></p>
+                    </div>
+                  </div>
+
+                  <div class="form-group item-form">
+                    <label class="label" for="current-employment-1"
+                      >Current Employment:</label
+                    >
+                    <label class="switch">
+                      <input
+                        type="checkbox"
+                        id="current-employment-1"
+                        required
+                        aria-describedby="error-current-job-1"
+                      />
+                      <span class="slider round"></span>
+                    </label>
+                    <p
+                      id="error-current-job-1"
+                      class="error"
+                      aria-live="polite"
+                    ></p>
+                  </div>
+
+                  <div class="activities">
+                    <div class="form-group item-form">
+                      <textarea
+                        id="job-desc-1"
+                        name="job-desc[]"
+                        placeholder="Key Responsibilities"
+                        required
+                        aria-describedby="error-job-desc-1"
+                      ></textarea>
+                      <p
+                        id="error-job-desc-1"
+                        class="error"
+                        aria-live="polite"
+                      ></p>
+                    </div>
+                    <div class="form-group item-form">
+                      <textarea
+                        id="achievements-1"
+                        name="achievements[]"
+                        placeholder="Key Achievements:"
+                        required
+                        aria-describedby="error-achievements-1"
+                      ></textarea>
+                      <p
+                        id="error-achievements-1"
+                        class="error"
+                        aria-live="polite"
+                      ></p>
+                    </div>
+                    <button type="button" class="remove-experience">
+                      Remove
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <button
+                type="button"
+                id="add-experience"
+                class="btn btn-small success"
+              >
+                Add Experience
+              </button>
+
+              <div class="form-mgt">
+                <button id="prev2" class="btn btn-vlarge success" type="button">
+                  Prev
+                </button>
+                <button id="next3" class="btn btn-vlarge" type="button">
+                  Next
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+
+        <!---=========
+   Experience Section Ends
+   ==================================-->
+        <!-- <div class="space"></div> -->
+        <!---=========
+  Job Interest Section Start
+  ==================================-->
+        <section
+          class="form-section top-padding-20 pd-bottom-20 rform"
+          id="job-interest"
+        >
+          <div class="form-wrap">
+            <!-- Global Display of Error 4 -->
+            <div id="error4" class="error"></div>
+            <h2 class="form-head">
+              <i class="fa-solid fa-magnifying-glass-arrow-right"></i> Job
+              Interest
+            </h2>
+            <div class="line-left"></div>
+            <form id="form4">
+              <div class="form1">
+                <div class="form-group item-form">
+                  <input
+                    type="text"
+                    id="desired-position"
+                    class="desired-position"
+                    placeholder="Desired Position"
+                    required
+                    aria-describedby="errorJobInterest"
+                  />
+                  <p id="errorJobInterest" class="error"></p>
+                </div>
+              </div>
+              <div class="form1">
+                <div class="form-group item-form">
+                  <input
+                    type="text"
+                    id="preferred-location"
+                    class="preferred-location"
+                    placeholder="Preferred Location"
+                    required
+                    aria-describedby="errorLocation"
+                  />
+                  <p id="errorLocation" class="error"></p>
+                </div>
+              </div>
+              <div class="form-group item-form">
+                <select
+                  name="job-type"
+                  id="job-type"
+                  aria-describedby="errorJobType"
+                >
+                  <option value="" disabled selected>Job Type</option>
+                  <option value="full-time">Full Time</option>
+                  <option value="part-time">Part Time</option>
+                  <option value="contract">Contract</option>
+                  <option value="freelance">Freelance</option>
+                  <option value="internship">Internship</option>
+                </select>
+                <p id="errorJobType" class="error"></p>
+              </div>
+              <div class="form-group item-form">
+                <textarea
+                  id="additional-info"
+                  placeholder="Additional Information"
+                  required
+                  aria-describedby="errorAdditionalInfo"
+                ></textarea>
+                <p id="errorAdditionalInfo" class="error"></p>
+              </div>
+              <div class="form-mgt">
+                <button id="prev3" class="btn btn-vlarge success" type="button">
+                  Prev
+                </button>
+                <button id="next4" class="btn btn-vlarge" type="submit">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+        <!---=========
+  Job Interest Section Ends
+  ==================================-->
+
+        <!---=========
+    Personal Statement Section Start
+    ==================================-->
+        <section
+          class="form-section top-padding-20 pd-bottom-20 rform"
+          id="personal-statement"
+        >
+          <div class="form-wrap">
+            <h2 class="form-head">
+              <i class="fa-solid fa-pen"></i> Personal Statement
+            </h2>
+            <div class="line-left"></div>
+            <div class="form-group item-form">
+              <textarea
+                id="personal-statement-text"
+                placeholder="Write your personal statement here..."
+                required
+                aria-describedby="errorPersonalStatement"
+              ></textarea>
+              <p id="errorPersonalStatement" class="error"></p>
+            </div>
+            <div class="form-mgt">
+              <button id="prev4" class="btn btn-vlarge success" type="button">
+                Prev
+              </button>
+              <button id="Preview" class="btn btn-vlarge" type="button">
+                Next
+              </button>
+            </div>
+          </div>
+        </section>
+        <!---=========
+    Personal Statement Section Ends
+    ==================================-->
+      </div>
+    </div>
+    <script type="module" src="./assets/js/stepsNav.js"></script>
+    <script src="./assets/js/addEducation.js"></script>
+    <script src="./assets/js/addExperience.js"></script>
+    <script src="./assets/js/localStorage.js"></script>
+    <!-- <script src="assets/js/formValidation.js"></script> -->
+  </body>
+</html>
