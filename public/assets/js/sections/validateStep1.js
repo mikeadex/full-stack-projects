@@ -53,7 +53,7 @@ export function validateStep1() {
     }
 
     if (phoneNumber === '' || phoneNumber === null) {
-        displayFieldError('errorPhone', 'You forgot to enter your phone number');
+        displayFieldError('errorPhone', 'Phone number is required');
         isValid = false;
     } else if (phoneNumber.length < 10) {
         displayFieldError('errorPhone', 'Phone number must be at least 10 digits');
@@ -63,7 +63,7 @@ export function validateStep1() {
     }
 
     if (email === '' || email === null) {
-        displayFieldError('errorEmail', 'You forgot to enter your email');
+        displayFieldError('errorEmail', 'email is required');
         isValid = false;
     } else if (!validateEmail(email)) {
         displayFieldError('errorEmail', `Invalid email format: e.g name@example.com`);

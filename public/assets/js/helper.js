@@ -7,7 +7,7 @@ export function validateEmail(email) {
 export function displayFieldError(errorId, message) {
     const errorElement = document.getElementById(errorId);
     if (errorElement) {
-        errorElement.textContent = message;
+        errorElement.textContent = message.toLowerCase();
     };
 
     const inputField = document.querySelector(`[aria-describedby="${errorId}"]`);
