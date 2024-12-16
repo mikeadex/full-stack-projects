@@ -242,14 +242,14 @@
                   <div class="form1">
                     <div class="form-group item-form">
                       <label class="label" for="course-name-1"
-                        >Course Name<span>*</span></label
+                        >Course<span>*</span></label
                       >
                       <input
                         type="text"
                         id="course-name-1"
                         name="course-name[]"
                         class="schol"
-                        placeholder="Course* (required)"
+                        placeholder="Botany"
                         aria-describedby="error-course-1"
                       />
                       <p
@@ -350,6 +350,7 @@
                   <i class="fa-solid fa-plus"></i> Add Education
                 </button>
               </aside>
+              <div class="line"></div>
               <div class="form-mgt">
                 <button id="prev1" class="btn btn-vlarge success" type="button">
                   Prev
@@ -385,12 +386,15 @@
                 <div class="experience-fieldset" data-index="1">
                   <div class="form1">
                     <div class="form-group item-form">
+                      <label class="label" for="employer-name-1"
+                        >Employer Name<span>*</span></label
+                      >
                       <input
                         type="text"
                         id="employer-name-1"
                         name="employer-name[]"
                         class="schol"
-                        placeholder="Employer Name"
+                        placeholder="Abc University"
                         required
                         aria-describedby="error-emp-1"
                       />
@@ -400,12 +404,15 @@
 
                   <div class="form1">
                     <div class="form-group item-form">
+                      <label class="label" for="job-role-1"
+                        >Job Title<span>*</span></label
+                      >
                       <input
                         type="text"
                         id="job-role-1"
                         name="job-role[]"
                         class="schol"
-                        placeholder="Job Title"
+                        placeholder="Research Assistant"
                         required
                         aria-describedby="error-title-1"
                       />
@@ -417,6 +424,9 @@
                     </div>
                   </div>
                   <div class="form-group item-form">
+                    <label class="label" for="employment-type-1"
+                      >Employment Type</label
+                    >
                     <select
                       id="employment-type-1"
                       name="employment[]"
@@ -436,6 +446,7 @@
 
                   <div class="form1">
                     <div class="form-group item-form">
+                      <label class="label" for="start-date-1">Start Date</label>
                       <input
                         type="date"
                         id="start-date-1"
@@ -453,6 +464,7 @@
                     </div>
 
                     <div class="form-group item-form">
+                      <label class="label" for="end-date-1">End Date</label>
                       <input
                         type="date"
                         id="end-date-1"
@@ -492,6 +504,9 @@
 
                   <div class="activities">
                     <div class="form-group item-form">
+                      <label class="label" for="job-desc-1"
+                        >Job description</label
+                      >
                       <textarea
                         id="job-desc-1"
                         name="job-desc[]"
@@ -506,6 +521,9 @@
                       ></p>
                     </div>
                     <div class="form-group item-form">
+                      <label class="label" for="achievements-1"
+                        >Achievements</label
+                      >
                       <textarea
                         id="achievements-1"
                         name="achievements[]"
@@ -519,20 +537,23 @@
                         aria-live="polite"
                       ></p>
                     </div>
-                    <button type="button" class="remove-experience">
-                      Remove
-                    </button>
+                    <aside style="text-align: right">
+                      <button
+                        type="button"
+                        class="remove-experience btn btn-default warning"
+                      >
+                        X
+                      </button>
+                    </aside>
                   </div>
+                  <div class="line"></div>
                 </div>
               </div>
 
-              <button
-                type="button"
-                id="add-experience"
-                class="btn btn-small success"
-              >
+              <button type="button" id="add-experience" class="btn btn-default">
                 Add Experience
               </button>
+              <div class="line"></div>
 
               <div class="form-mgt">
                 <button id="prev2" class="btn btn-vlarge success" type="button">
@@ -568,12 +589,14 @@
             <form id="form4">
               <div class="form1">
                 <div class="form-group item-form">
+                  <label class="label" for="desired-position"
+                    >Desired Position<span>*</span></label
+                  >
                   <input
                     type="text"
                     id="desired-position"
                     class="desired-position"
-                    placeholder="Desired Position"
-                    required
+                    placeholder="add ',' to separate multiple desired positions"
                     aria-describedby="errorJobInterest"
                   />
                   <p id="errorJobInterest" class="error"></p>
@@ -581,24 +604,27 @@
               </div>
               <div class="form1">
                 <div class="form-group item-form">
+                  <label class="label" for="preferred-location"
+                    >Preferred Location<span>*</span></label
+                  >
                   <input
                     type="text"
                     id="preferred-location"
                     class="preferred-location"
-                    placeholder="Preferred Location"
-                    required
+                    placeholder="You can add ',' to separate multiple locations"
                     aria-describedby="errorLocation"
                   />
                   <p id="errorLocation" class="error"></p>
                 </div>
               </div>
               <div class="form-group item-form">
+                <label class="label" for="job-type">Job Type</label>
                 <select
                   name="job-type"
                   id="job-type"
                   aria-describedby="errorJobType"
                 >
-                  <option value="" disabled selected>Job Type</option>
+                  <option value="" disabled selected>Select Job Type</option>
                   <option value="full-time">Full Time</option>
                   <option value="part-time">Part Time</option>
                   <option value="contract">Contract</option>

@@ -2,6 +2,33 @@
 
 let expCount = document.querySelectorAll('.experience-fieldset').length;
 
+
+/**
+ * Adds a new experience fieldset to the experience container.
+ * 
+ * This function clones the last experience fieldset, updates its attributes and IDs,
+ * clears its input values, and appends it to the experience container. It also sets up
+ * an event listener for the remove button within the cloned fieldset.
+ * 
+ * @function addExperienceFieldset
+ * @global
+ * 
+ * @example
+ * // Call this function to add a new experience fieldset
+ * addExperienceFieldset();
+ * 
+ * @description
+ * - Increments the experience count (`expCount`).
+ * - Clones the last experience fieldset and updates its `data-index` attribute.
+ * - Updates the IDs and `aria-describedby` attributes of all input, select, and textarea elements within the cloned fieldset.
+ * - Clears the values of the cloned input elements.
+ * - Updates the IDs of error message elements within the cloned fieldset.
+ * - Updates the `for` attributes of label elements within the cloned fieldset.
+ * - Appends the cloned fieldset to the experience container.
+ * - Adds an event listener to the remove button within the cloned fieldset to handle its removal.
+ * 
+ * @throws {Error} If the remove button is not found within the cloned fieldset.
+ */
 function addExperienceFieldset() {
     console.log('Experience field started');
     expCount++;

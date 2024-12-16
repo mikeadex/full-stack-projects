@@ -1,12 +1,12 @@
 "use script";
-
+// Import helper functions
 import {
     validateEmail,
     displayFieldError,
     clearErrorField
 } from "../helper.js";
 
-
+// function to check if the form fields are valid (step 1)
 export function validateStep1() {
     const firstName = document.getElementById('first-name').value.trim();
     const lastName = document.getElementById('last-name').value.trim();
@@ -15,7 +15,7 @@ export function validateStep1() {
     const country = document.getElementById('country').value.trim();
     const phoneNumber = document.getElementById('phone').value.trim();
     const email = document.getElementById('email').value.trim();
-
+    // initialize isValid to true and check if any of the fields are empty. if they are, isValid is set to false
     let isValid = true;
     if (firstName === '' || firstName === null) {
         displayFieldError('errorFn', 'Firstname is required');

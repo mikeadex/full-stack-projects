@@ -5,6 +5,7 @@ const { GoogleGenerativeAI } = require("@google/generative-ai");
 const genAI = new GoogleGenerativeAI(
     process.env.GOOGLE_AI_KEY
 );
+// Check if GoogleGenerativeAI instance is initialized
 if (!genAI) {
     console.error("Failed to initialize Google AI");
 }
